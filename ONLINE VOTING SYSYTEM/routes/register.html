@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>Online Voting System - Registration</title>
+    <link rel="stylesheet" href="../css/stylesheet.css">
+</head>
+<body>
+    <style>
+        #imageupload {
+            border: 2px solid black;
+            border-radius: 8px;
+            width: 14%;
+            background-color: white;
+        }
+    </style>
+    <center>
+        <div id="headerSection_Registration">
+            <h1>Online Voting System</h1>
+        </div>
+        <hr>
+        <h3>Registration</h3>
+        <form action="../api/register.php" method="POST" enctype="multipart/form-data">
+            <input type="text" name="name" placeholder="Enter your name" required><br><br>
+            <input type="number" name="mobile" placeholder="Enter your mobile number" required><br><br>
+            <input type="password" name="password" placeholder="Enter your password" required><br><br>
+            <input type="password" name="cpassword" placeholder="Confirm password" required><br><br>
+            <input type="text" name="address" placeholder="Enter your address" required><br><br>
+
+            <select name="role" id="dropbox2" required>
+                <option value="" disabled selected>Select your role</option>
+                <option value="1">Voter</option>
+                <option value="2">Candidate</option>
+            </select><br><br>
+
+            <center>
+                <div id="imageupload">
+                    Upload image: <input type="file" name="photo" accept="image/*" required>
+                </div>
+            </center>
+            <br><br>
+
+            <button id="loginbtn2">Register Here</button><br><br>
+            Already a user? <a href="../index.html">LogIn Here</a>
+        </form>
+    </center>
+</body>
+</html>

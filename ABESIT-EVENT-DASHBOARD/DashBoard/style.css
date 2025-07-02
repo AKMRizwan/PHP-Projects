@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kaushan+Script&display=swap');
+
+/* font-family: "Kaushan Script", cursive;
+font-family: "Dancing Script", cursive; */
+
+
+.slider{
+  height: 80vh;
+  margin-bottom: 120px;
+}
+.mynav{
+  background-image: linear-gradient(to right,rgba(0, 0, 255, 0.708),white,blue);
+}
+.navbar-brand{
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: 'dancing script',cursive;
+}
+
+.navbar-nav li a, .he{
+  font-family: "Kaushan Script", cursive;
+  color:aliceblue; 
+}
+
+.main{
+  width: 50%;
+}
+input[type=text]{
+  width: 100%;
+}
+label{
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+::placeholder{
+  text-align: center;
+}

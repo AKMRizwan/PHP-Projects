@@ -1,0 +1,90 @@
+body{
+    /* text-align: center; */
+    background-color: blanchedalmond;
+}
+
+#headerSection{
+    padding: 5px;
+}
+#headerSection_Registration{
+    padding: 5px;
+    font-family: cursive;
+}
+/* #header_dashboard{
+    padding: 5px;
+    font-family: cursive;
+} */
+
+#headerSection h1{
+    font-family: cursive;
+}
+
+input{
+    padding: 10px;
+    border-radius: 6px;
+}
+
+#dropbox{
+    padding: 10px;
+    border-radius: 6px;
+    width: 13%;
+    border: 2px solid black;
+}
+#dropbox2{
+    padding: 10px;
+    border-radius: 6px;
+    width: 13%;
+    border: 2px solid black;
+}
+
+#loginbtn{
+    padding: 10px;
+    border-radius: 6px;
+    background-color: aliceblue;
+    
+}
+#loginbtn2{
+    padding: 10px;
+    border-radius: 6px;
+    background-color: aliceblue;
+    
+}
+
+
+
+/* 
+#Candidate > div {
+    padding: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+}
+#Profile, #Candidate {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    background-color: #f9fcff;
+}
+#Candidate img, #Profile img {
+    border-radius: 8px;
+    object-fit: cover;
+}
+#voted {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 768px) {
+    #Profile, #Candidate {
+        float: none;
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+h1 {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 28px;
+    color: #222;
+} */
