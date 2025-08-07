@@ -7,18 +7,22 @@ require_once '../vendor/autoload.php'; // If using Composer
 // require '../PHPMailer/src/PHPMailer.php';
 // require '../PHPMailer/src/SMTP.php';
 // require '../PHPMailer/src/Exception.php';
+require_once '../config.php';  
 
 function sendOTP($toEmail, $toName, $otp) {
     $mail = new PHPMailer(true);
 
     try {
+        $config = require '../config.php'; // Make sure path is correct
+
         $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com';
-        $mail->SMTPAuth = true;
-        $mail->Username = 'smithninza@gmail.com';         // Your Gmail
-        $mail->Password = 'vguw ffmh tjea hzhq';       // App password from Google
-        $mail->SMTPSecure = 'tls';
-        $mail->Port = 587;
+        $mail->Host       = $config['smtp_host'];
+        $mail->SMTPAuth   = $config['smtp_auth'];
+        $mail->Username   = $config['smtp_username'];
+        $mail->Password   = $config['smtp_password'];
+        $mail->SMTPSecure = $config['smtp_secure'];
+        $mail->Port       = $config['smtp_port'];
+
 
         $mail->setFrom('smithninza@gmail.com', 'Invoice Parser');
         $mail->addAddress($toEmail, $toName);
